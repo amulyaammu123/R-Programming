@@ -1,0 +1,19 @@
+set.seed(123)
+
+x <- rnorm(1000, mean = 50, sd = 10)
+
+# Display first 10 values
+print(head(x, 10))
+
+# Count values below 40, from 40 to 60, and above 60
+counts <- c(
+  Below_40 = sum(x < 40),
+  From_40_to_60 = sum(x >= 40 & x <= 60),
+  Above_60 = sum(x > 60)
+)
+
+print(counts)
+
+# Histogram
+hist(x, main = "Normal Distribution",
+     xlab = "Value", col = "lightblue")
