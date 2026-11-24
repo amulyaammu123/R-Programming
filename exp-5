@@ -1,0 +1,26 @@
+# Women's height data
+height <- c(58, 62, 65, 61, 67, 64, 60)
+height_factor <- factor(height)
+
+print(height_factor)
+print(levels(height_factor))
+print(nlevels(height_factor))
+
+# Categorize heights
+height_group <- cut(
+  height,
+  breaks = c(55, 60, 65, 70),
+  labels = c("Short", "Medium", "Tall"),
+  include.lowest = TRUE
+)
+
+print(height_group)
+print(table(height_group))
+
+# Random sample of letters
+set.seed(123)
+letters_sample <- sample(LETTERS, 10)
+
+letter_factor <- factor(letters_sample)
+print(letter_factor)
+print(table(letter_factor))
