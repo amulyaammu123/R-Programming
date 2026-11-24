@@ -1,0 +1,8 @@
+n <- as.integer(readline("Enter a positive integer: "))
+
+if (n > 0) {
+  factors <- which(n %% seq_len(n) == 0)
+  print(factors)
+} else {
+  cat("Enter a positive integer.\n")
+}
