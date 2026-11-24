@@ -1,0 +1,19 @@
+my_list <- list(
+  numbers = c(10, 20, 30),
+  names = c("Anu", "Ravi", "Priya"),
+  matrix_data = matrix(1:6, nrow = 2),
+  add = function(a, b) a + b,
+  square = function(x) x^2
+)
+
+# Display list
+print(my_list)
+str(my_list)
+
+# Access list elements
+print(my_list$numbers)
+print(my_list$matrix_data)
+
+# Execute functions stored in the list
+print(my_list$add(5, 3))
+print(my_list$square(4))
