@@ -1,0 +1,14 @@
+# Empty plot
+plot(
+  x = 0, y = 0,
+  type = "n",
+  xlim = c(0, 10),
+  ylim = c(0, 100),
+  main = "Empty Plot",
+  xlab = "X-axis",
+  ylab = "Y-axis"
+)
+
+# Add points later if required
+points(c(2, 4, 6, 8), c(20, 40, 60, 80),
+       col = "blue", pch = 19)
